@@ -1,0 +1,32 @@
+*{
+    background-color: teal;
+}
+.body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.continer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    color:white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.p1{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}

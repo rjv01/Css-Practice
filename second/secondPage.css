@@ -1,0 +1,44 @@
+*{
+    background-color: black;
+    color:white
+}
+.body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1{
+    font-family: "press Start 2P","consolas",sans-serif;
+    font-size:45px;
+    padding: 15px;
+    border-bottom-style: dotted;
+}
+
+.p1{
+    color:#00FF73;
+    font-family: "consolas",sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size:40px
+}
+
+.p2{
+    color:#00FF73;
+    font-size: 20px;
+    font-family: "consolas",sans-serif;
+    border-style:outset;
+    border-width: 5px;
+    border-color: rgb(13, 157, 219);
+    border-radius: 10px;
+    margin: 20px;   
+    padding: 20px;
+
+}
