@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(to right,pink);
+}
+
+.div6{
+
+}
+
+h1{
+    text-align: center;
+}
+a{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color:chocolate;
+}
+a:active{
+    color: yellow;
+}
+
+#btn{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    color: brown;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: darkorchid;
+    color: black;
+    transition-duration: 200ms;
+}
+#btn:active{
+    color: yellow;
+}
+
+#area{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 20px;
+}
+
+li{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+li:nth-child(even){
+    background-color: skyblue;
+}
+li:nth-child(odd){
+    background-color: powderblue;
+}

@@ -27,6 +27,11 @@ h1{
     background-attachment: fixed;
 }
 
+a{
+    color:white;
+    font-size: 20px;
+}
+
 p{
     font-family: "consolas",sans-serif;
     font-size: larger;
