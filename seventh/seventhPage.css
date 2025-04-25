@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom, #1c1c1c, rgb(187, 0, 0));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height:100vh;
+}
+
+.div7{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-shadow: 0px -5px 10px white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.fire:hover, .water:hover, .earth:hover, .air:hover{
+    transform: scale(1.05);
+}
+
+.fire{
+    font-size: 30px;
+    font-family: "press Start 2P","consolas",sans-serif;
+    text-shadow: 0px 0px 10px yellow, 0px -5px 15px red;
+    
+}
+a{
+    color: white;
+    font-size: 20px;
+}
+.water{
+    font-size: 30px;
+    font-family: "press Start 2P","consolas",sans-serif;
+    text-shadow: 0 0 10px #00f, 0 -8px 15px skyblue;
+    
+}
+
+.earth{
+    text-align: center;
+    font-size: 30px;
+    font-family: "press Start 2P","consolas",sans-serif;
+    text-shadow: 0 0 10px #8B4513, 0 -8px 15px #b95a5a;
+    ;
+}
+
+.air{
+    text-align: center;
+    font-size: 30px;
+    font-family: "press Start 2P","consolas",sans-serif;
+    text-shadow: 0 0 10px lightblue, 0 -8px 15px white;
+    
+}
