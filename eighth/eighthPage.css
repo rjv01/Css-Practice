@@ -12,7 +12,13 @@
     align-items: center;
     height: 100vh;
   }
-
+  a{
+    color: blue;
+    font-size: large;
+  }
+  .adiv{
+    margin-bottom: 15px;
+  }
   .div8 {
     background-color: #ffffff;
     padding: 2rem 3rem;
