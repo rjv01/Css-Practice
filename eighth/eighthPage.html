@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eighthPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div8">
+      <h1>Welcome to Eighth Page</h1>
+      <input id="name" type="text" placeholder="Enter Name..." autofocus />
+      <br />
+      <button id="btn">Submit</button>
+      <button id="resetBtn">Reset</button>
+      <button id="randomAnimationBtn">Random Animation</button>
+      <span id="displayName"></span>
+      <span id="animationName"></span>
+    </div>
+  
+    <script>
+      const btn = document.getElementById("btn");
+      const resetBtn = document.getElementById("resetBtn");
+
+      const animationName = document.getElementById("animationName");
+
+      const randomAnimationBtn = document.getElementById("randomAnimationBtn");
+  
+      const name = document.getElementById("name");
+      const displayName = document.getElementById("displayName");
+  
+      let p = null;
+  
+      btn.addEventListener("click", () => {
+        if (name.value.trim() !== "") {
+          p = document.createElement("p");
+          p.innerText = name.value;
+          displayName.appendChild(p);
+          name.value = "";
+        } else {
+          alert("Enter Name");
+        }
+      });
+  
+      resetBtn.addEventListener("click", () => {
+        displayName.innerHTML = "";
+      });
+  
+      const rotateX = document.createElement("div");
+      const rotateY = document.createElement("div");
+      const rotateZ = document.createElement("div");
+      const transformX = document.createElement("div");
+      const transformY = document.createElement("div");
+      const scaleX = document.createElement("div");
+      const scaleY = document.createElement("div");
+
+      const displayAnimationName = document.createElement("div");
+  
+      const animationArray = ["rotateX", "rotateY", "rotateZ", "translateX", "translateY", "scaleX", "scaleY"];
+  
+      randomAnimationBtn.addEventListener("click", () => {
+        let randomNumber = Math.floor(Math.random() * animationArray.length);
+        let selected = animationArray[randomNumber];
+      
+        animationName.innerText = `Applied: ${selected}`;
+        
+        if (p) {
+          if (selected === "rotateX") {
+            p.style.transform = "rotateX(180deg)";
+          } else if (selected === "rotateY") {
+            p.style.transform = "rotateY(180deg)";
+          } else if (selected === "rotateZ") {
+            p.style.transform = "rotateZ(180deg)";
+          } else if (selected === "translateX") {
+            p.style.transform = "translateX(50px)";
+          } else if (selected === "translateY") {
+            p.style.transform = "translateY(50px)";
+          } else if (selected === "scaleX") {
+            p.style.transform = "scaleX(1.5)";
+          } else if (selected === "scaleY") {
+            p.style.transform = "scaleY(1.5)";
+          }
+          p.style.transition = "transform 1s ease";
+        }
+      });
+      
+    </script>
+  </body>
+</html>
