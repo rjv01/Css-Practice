@@ -1,0 +1,112 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: brown;
+}
+
+.div9 {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, red, white);
+}
+
+.box {
+    width: 200px;
+    height: 180px;
+    font-size: 180px;
+    background-color: red;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+
+    animation: myColorChange 5s linear 0s infinite running;
+}
+
+.box1 {
+    margin: 80px;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    font-size: 120px;
+    background: linear-gradient(to bottom, red, white);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    animation: myRotate 5s linear 0s infinite running;
+}
+
+.box2 {
+    margin: 80px;
+    width: 340px;
+    height: 150px;
+    padding: 10px;
+    font-size: 120px;
+    background: linear-gradient(to bottom, red, white);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    animation: myOpacity 5s linear 0s infinite running;
+}
+
+.box0 {
+    margin: 80px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    font-size: 120px;
+    background: linear-gradient(to bottom, red, white);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    animation: mySlide 5s linear 0s infinite running;
+}
+.boxminus1 {
+    background-image: image("");
+    margin: 80px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    font-size: 120px;
+    background: linear-gradient(to bottom, red, white);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    /* animation: mySlide 5s linear 0s infinite running; */
+}
+
+/* Animations */
+@keyframes mySlide {
+    from { margin-left: 100%; }
+    to { margin-left: 0%; }
+}
+
+@keyframes myRotate {
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+@keyframes myColorChange {
+    0% { background-color: red; }
+    20% { background-color: orange; }
+    40% { background-color: yellow; }
+    60% { background-color: green; }
+    80% { background-color: blue; }
+    100% { background-color: purple; }
+}
+
+@keyframes myOpacity {
+    50% { opacity: 0; }
+}
